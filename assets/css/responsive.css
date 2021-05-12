@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1860px) {}
+@media only screen and (max-width: 1680px) {}
+@media only screen and (max-width: 1440px) {}
+@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 1169px) {}
+@media only screen and (max-width: 1023px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 575px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 320px) {}
+
+
+@media (min-width: 991px) {
+    #header {
+      margin-left: 0;
+    }
+    .headtoggle{
+        display: none;
+    }
+    #wrapper-inner {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #header {
+      margin-left: -20rem;
+    }
+    
+}
+@media only screen and (max-width: 991px) {
+  .headcapotion{
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+    #header{
+        padding: 20px;
+        margin-left: -14rem;
+    }
+    .buildinghead{
+        flex-direction: column;
+    }
+    .mybuild h1{
+        margin-bottom: 15px;
+    }
+}

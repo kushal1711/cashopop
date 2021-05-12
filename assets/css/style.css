@@ -1,0 +1,400 @@
+
+/*======================= 
+/** Reset CSS 
+=========================*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a{
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ins{
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/*======================= 
+/** Common CSS 
+=========================*/
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height:1.15;
+    background-color: #F5F5F5;
+    color: #000000;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    font-size: 16px;
+    color: #02324F;
+    font-weight: 400;   
+    text-decoration: none;
+}
+a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #02324F;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    color: #02324F;
+    font-weight: 400;
+}
+#wrapper{
+    display: flex;
+    overflow-x: hidden;
+}
+#wrapper-inner {
+    min-width: 100vw;
+    padding: 30px;
+} 
+.button{
+    background-color: #02324F;
+    padding: 10px 40px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: #FEC714;
+    color: #02324F;
+}
+/***** header *****/
+#header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-left: -20rem;
+    transition: margin 0.25s ease-out;
+    background-color: #02324F;
+    padding: 40px 100px 40px 40px;
+}
+#wrapper.toggled #header {
+    margin-left: 0;
+}
+.headmenu li,.headlogout li{
+    padding: 15px 0px;
+}
+.headmenu li a, .headlogout li a{
+    color: #FFFFFF;
+}
+.headmenu li a i, .headlogout li a i{
+    margin-right: 5px;
+}
+.headmenu li a:hover, .headlogout li a:hover{
+    color: #FEC714;
+}
+.headlogout li a i{
+    transform: rotate(181deg);
+}
+.headmenu li a.active{
+    color: #FEC714;
+}
+#logo{
+    margin-bottom: 80px;
+}
+#logo a{
+    display: inline-block;
+}
+#logo img{
+    max-width: 180px;
+}
+.headertop{
+    display: flex;
+    align-items: center;
+    padding: 40px 0px 20px;
+    justify-content: space-between;
+}
+.headerleft{
+    display: flex;
+    align-items: center;
+}
+.headerleft h1{
+    font-weight: 500;
+}
+.headtoggle{
+    padding: 8px 10px;
+    background-color: #02324F;
+    display: inline-block;
+    border-radius: 5px;
+}
+.headtoggle a{
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.headerright{
+    display: flex;
+    align-items: center;
+}
+.headerimage a{
+    display: inline-block;
+    max-width: 40px;
+    height: auto;
+}
+.headerimage a img{
+    border-radius: 50%;
+}
+.headername{
+    margin-right: 10px;
+}
+.headername a{
+    font-weight: bold;
+}
+.headcapotion{
+    display: flex;
+    align-items: center;
+}
+.headcapotion a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #D6F0FF;
+    margin-right: 10px;
+}
+.headcapotion a .fas{
+    padding: 13px;
+}
+/***** Dashboard Page *****/
+/***** My building page *****/
+.buildinghead{
+    display: flex;
+    align-items: center;
+    background-color: #FEC714;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.mybuildleft ul{
+    display: flex;
+}
+.mybuildleft ul li{
+    padding: 0px 15px;
+}
+.mybuildleft ul li:nth-child(2) a i{
+    transform: rotate(269deg);
+}
+.mybuildingbox{
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.buildingthumb a{
+    display: inline-block;
+}
+.buildingthumb a img{
+    border-radius: 20px;
+}
+.buildingcaption{
+    padding: 20px;
+}
+.buildingcaption h1{
+    font-size: 20px;
+}
+.buildingbox-option{
+    margin-top: 10px;
+}
+.buildingbox-option ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.buildingbox-option ul li{
+    padding: 0px 10px;
+}
+/* Add Building page css  */
+.addbuildingbox{
+    padding: 20px;
+    border: 1px solid #FEC714;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+.addbuildinginput{
+    margin-bottom: 20px;
+}
+.addbuildinginput textarea{
+    height: 140px;
+    resize: none;
+    overflow: auto;
+}
+.form-label{
+    color: #02324F;
+    font-weight: 500;
+}
+.form-control, .form-control:focus{
+    background-color: #F5F5F5;
+    color: #02324F;
+    border: none;
+    box-shadow: none;
+}
+/* Reehan page css  */
+.reehanoption{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.reehan-group_label{
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #FFFFFF;
+    color: #02324F;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    float: left;
+    border: 1px solid #FEC714;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.reehan-radio{
+    display: none;
+}
+.reehan-group_label:first-child{
+    margin-right: 10px;
+}
+.reehan-radio:checked + .reehan-group_label{
+   background-color: #FEC714;
+    color: #02324F;
+    border: 1px solid #FEC714;
+}
+.filterreehan a{
+    background-color: #D6F0FF;
+    border: 1px solid #D6F0FF;
+    color: #02324F;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+.reehantable{
+    margin-top: 20px;
+}
+.reehantable .table{
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+}
+th,
+td {
+  background: #ffffff;
+  padding: 1rem;
+  border: 1px solid;
+}
+.reehantable .table thead th{
+    background-color: #FEC714;
+    border: 1px solid #FEC714;
+    border-bottom-color: #FEC714 !important;
+    padding: 10px 25px 10px 25px;
+}
+.reehantable .table thead th:first-child{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+.reehantable .table thead th:last-child{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px ;
+}
+.reehantable .table tbody tr td{
+    background-color: #FFFFFF;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #FEC714;
+    padding: 25px;
+}
+.reehantable .table tbody tr td:first-child{
+    border-left: 1px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+.reehantable .table tbody tr td:last-child{
+    border-right: 1px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px ;
+}
+
